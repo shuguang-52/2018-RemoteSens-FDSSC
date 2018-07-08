@@ -41,9 +41,6 @@ To install it and related development package, type:
     pip install --user numpy scipy matplotlib scikit-learn scikit-image
     pip install --user keras
 
-## Dataset
-You can get all HSI datasets by running Download_Datasets.py.
-Or you can download IN, KSC and UP dataset at [here](http://www.ehu.eus/ccwintco/index.php?title=Hyperspectral_Remote_Sensing_Scenes)
 
 ### **Model visualization**
 The keras.utils.vis_utils provides a function to draw the Keras model (using graphviz) and we used it in our code. It relies on pydot-ng and graphviz. To install it, type:
@@ -51,6 +48,9 @@ The keras.utils.vis_utils provides a function to draw the Keras model (using gra
      pip install pydot-ng & brew install graphviz
    
 Or you can delete related code. It doesn't matter with classification results.
+## Dataset
+You can get all HSI datasets by running Download_Datasets.py.
+Or you can download IN, KSC and UP dataset at [here](http://www.ehu.eus/ccwintco/index.php?title=Hyperspectral_Remote_Sensing_Scenes)
 
 ## Reproducing the results
 1) Run the "Train_FDSSC.py". You need type the name of HSI dataset. Model are saved with a hdf5 format in ./models file.
