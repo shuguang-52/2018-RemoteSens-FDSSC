@@ -107,8 +107,7 @@ padded_data = np.lib.pad(whole_data, ((PATCH_LENGTH, PATCH_LENGTH), (PATCH_LENGT
                          'constant', constant_values=0)
 
 CATEGORY = nb_classes
-day = datetime.datetime.now()
-day_str = day.strftime('%m_%d_%H_%M')
+day_str = input('please input the number of model:')
 
 KAPPA = []
 OA = []
@@ -117,7 +116,7 @@ TRAINING_TIME = []
 TESTING_TIME = []
 ELEMENT_ACC = np.zeros((ITER, CATEGORY))
 
-seeds = [1331, 1332, 1333, 1334, 1335, 1336, 1337, 1338, 1339, 1340, 1341]
+seeds = [1331, 1332, 1333, 1334, 1335, 1336, 1337, 1338, 1339, 1340]
 
 for index_iter in range(ITER):
     print("-----Starting the  %d Iteration-----" % (index_iter + 1))
@@ -172,6 +171,6 @@ for index_iter in range(ITER):
     KAPPA.append(kappa)
     ELEMENT_ACC[index_iter, :] = each_acc_fdssc
 
-print("--------FDSSC Training Finished-----------")
+print("--------FDSSC Evaluation Finished-----------")
 record.record_output(OA, AA, KAPPA, ELEMENT_ACC,TRAINING_TIME, TESTING_TIME,
                      'records/' + Dataset + '_fdssc_' + day_str + '.txt')
