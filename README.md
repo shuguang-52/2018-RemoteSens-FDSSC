@@ -55,9 +55,9 @@ Or you can download IN, KSC and UP dataset at [here](http://www.ehu.eus/ccwintco
 ## Reproducing the results
 1) Run the "Train_FDSSC.py". You need type the name of HSI dataset. Model are saved with a hdf5 format in ./models file.
 
-2) Run the notebook "Evaluate_Model.py", in order to evaluate saved models. You need type the name of HSI dataset and the time series number of model(such as '04\_17\_14\_36').
+2) Run the "Evaluate_Model.py", in order to evaluate saved models. You need type the name of HSI dataset and the time series number of model(such as '04\_17\_14\_36').
 
-3) Run the notebook "Get\_Classification\_Maps.py", for creating the clasification map. You also need type the name of HSI dataset and the time series number of model. And you will get the result in .mat format and classification maps.
+3) Run the "Get\_Classification\_Maps.py", for creating the clasification map. You also need type the name of HSI dataset and the time series number of model. And you will get the result in .mat format and classification maps.
 
 ## Experiment results
 ![](http://www.mdpi.com/remotesensing/remotesensing-10-01068/article_deploy/html/images/remotesensing-10-01068-g010.png)
