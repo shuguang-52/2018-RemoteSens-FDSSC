@@ -135,7 +135,7 @@ seeds = [1331, 1332, 1333, 1334, 1335, 1336, 1337, 1338, 1339, 1340, 1341]
 
 for index_iter in range(ITER):
     print("-----Starting the  %d Iteration-----" % (index_iter + 1))
-    best_weights_RES_path_ss4 = 'models/'+Dataset+'_FDSSC_'+day_str+'@'+str(index_iter+1)+'.hdf5'
+    best_weights_path = 'models/'+Dataset+'_FDSSC_'+day_str+'@'+str(index_iter+1)+'.hdf5'
 
     np.random.seed(seeds[index_iter])
     train_indices, test_indices = sampling(VALIDATION_SPLIT, gt)
@@ -173,7 +173,7 @@ for index_iter in range(ITER):
     model_fdssc = our_model()
     plot_model(model_fdssc, to_file='FDSSC_'+Dataset+'.png', show_shapes=True)
     early_Stopping = kcallbacks.EarlyStopping(monitor='val_loss', patience=50, verbose=1, mode='min')
-    save_Best_Model = kcallbacks.ModelCheckpoint(best_weights_RES_path_ss4, monitor='val_loss', verbose=1,
+    save_Best_Model = kcallbacks.ModelCheckpoint(best_weights_path, monitor='val_loss', verbose=1,
                                                  save_best_only=True, mode='auto')
     reduce_LR_On_Plateau = kcallbacks.ReduceLROnPlateau(monitor='val_acc', factor=0.5, patience=10, mode='auto',
                                                         verbose=1, min_lr=0)
