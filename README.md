@@ -2,7 +2,7 @@
 # A Fast Dense Spectral-Spatial Convolution Network Framework for Hyperspectral Images Classification
 This is the Keras implementation of the [paper](http://www.mdpi.com/2072-4292/10/7/1068) (accpted by Remote Sensing in 3 July 2018).  
 
-![](http://www.mdpi.com/remotesensing/remotesensing-10-01068/article_deploy/html/images/remotesensing-10-01068-g006.png)
+![](figures/FDSSC Network.png)
 **Fig 1**.FDSSC network
 
 ## Citation
