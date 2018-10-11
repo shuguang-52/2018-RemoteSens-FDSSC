@@ -3,6 +3,7 @@
 This is the Keras implementation of the [paper](http://www.mdpi.com/2072-4292/10/7/1068) (accpted by Remote Sensing in 3 July 2018).  
 
 <img src='figures/FDSSC Network.PNG'>
+
 **Fig 1**.FDSSC network
 
 ## Citation
@@ -60,10 +61,14 @@ Or you can download IN, KSC and UP dataset at [here](http://www.ehu.eus/ccwintco
 3) Run the "Get\_Classification\_Maps.py", for creating the clasification map. You also need type the name of HSI dataset and the time series number of model. And you will get the result in .mat format and classification maps.
 
 ## Experiment results
-![](http://www.mdpi.com/remotesensing/remotesensing-10-01068/article_deploy/html/images/remotesensing-10-01068-g010.png)
+<img src="figures/KSC.PNG">
+
 **Fig 2**.Classification maps for KSC dataset: (a) real image of one band in KSC dataset; (b) ground-truth map; (c) SAE-LR, OA = 92.99%; (d) CNN, OA = 99.31%; (e) SSRN, OA = 99.94%; and (f) FDSSC, OA = 99.96%.
 
-![](http://www.mdpi.com/remotesensing/remotesensing-10-01068/article_deploy/html/images/remotesensing-10-01068-g011.png)
+<img src="figures/UP.PNG">
+
 **Fig 3**.Classificatin maps for Figure 11 Classification maps for UP dataset: (a) real image of one band in UP dataset; (b) ground-truth map; (c) SAE-LR, OA = 98.46%; (d) CNN, OA = 99.38%; (e) SSRN, OA = 99.93%; and (f) FDSSC, OA = 99.96%.
-![](http://www.mdpi.com/remotesensing/remotesensing-10-01068/article_deploy/html/images/remotesensing-10-01068-g012.png)
+
+<img src="figures/IN.PNG">
+
 **Fig 4**.Classification maps for IN dataset: (a) real image of one band in the IN dataset; (b) ground-truth map; (c) SAE-LR, OA = 93.98%; (d) CNN, OA = 95.96%; (e) SSRN, OA = 99.35%; and (f) FDSSC, OA = 99.72%
