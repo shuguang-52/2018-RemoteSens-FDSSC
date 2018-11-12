@@ -183,6 +183,9 @@ for index_iter in range(ITER):
 
     x = np.ravel(pred_test)
     gt = gt_hsi.flatten()
+    for i in range(len(gt)):
+        if gt[i] == 0:
+            gt[i] = 16
 
     print('-------Save the result in mat format--------')
     x_re = np.reshape(x, (gt_hsi.shape[0], gt_hsi.shape[1]))
