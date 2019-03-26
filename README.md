@@ -23,7 +23,7 @@ You can download Python 3.5.3 at [here](https://www.python.org/downloads/release
 We use Tensorflow-gpu as our computing backend, and you can also use [theano](http://deeplearning.net/software/theano/install.html) as computing backend. For downloading tensorflow, you can find all the information you need at [here](https://www.tensorflow.org/install/). 
 If you have pip, you can simply input the following command:
 
-    pip install --user --upgrade tensorflow-gpu
+    pip install --user tensorflow-gpu==1.18.0
     
 ### **CUDA v9.0 and cuDNN v7.0**
 To run the tensorflow-gpu, you need a Nvidia GPU card with CUDA Compute Capability 3.0 or higher. 
@@ -40,7 +40,7 @@ If you have a different version of one of the preceding packages, please change 
 To install it and related development package, type:
 
     pip install --user numpy scipy matplotlib scikit-learn scikit-image
-    pip install --user keras
+    pip install --user keras==2.1.6
 
 
 ### **Model visualization**
